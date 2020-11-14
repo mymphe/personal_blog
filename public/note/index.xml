@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Azat&#39;s Blog</title>
+    <link>/note/</link>
+    <description>Recent content in Notes on Azat&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Setup</title>
+      <link>/note/2020/11/14/blog-setup/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2020/11/14/blog-setup/</guid>
+      <description>Framework: Hugo
+Theme: hugo-xmin (modified)
+Deployed on: Vercel (free)
+Domain: Namecheap ($5/year)</description>
+    </item>
+    
+    <item>
+      <title>Vim Setup for Front-End Development</title>
+      <link>/note/2020/11/14/vim-setup-for-front-end-development/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/note/2020/11/14/vim-setup-for-front-end-development/</guid>
+      <description>VIM: Vi IMproved 8.1
+Config: .vimrc
+Plugin manager: vim-plug
+Color scheme: vim-code-dark
+Status bar: vim-airline, vim-airline-themes (deus)
+Terminal font: Fira Mono for Powerline
+Syntax highlighting: vim-javascript, vim-jsx-pretty
+Autocompletion, LSP, formatting, etc: coc.nvim, coc-tsserver, coc-eslint, coc-prettier
+Other: fzf.vim, vim-fugitive</description>
+    </item>
+    
+  </channel>
+</rss>

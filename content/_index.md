@@ -1,5 +1,5 @@
 ---
-heading: "Hi, I'm Azat"
-subheading: "Welcome to my personal blog."
-handle: "azatsdev"
+title: Home
 ---
+
+Welcome to my blog, stranger!
