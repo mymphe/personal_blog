@@ -1,5 +1,15 @@
+{{ define "meta" }}
+  <div class="article-meta">
+    <span>{{ .Page.ReadingTime}}-minute read</span>
+    <br />
+    <span>{{ .Page.Date.Format "January 2, 2006" }}</span>
+  </div>
+{{ end }}
+
 {{ define "main" }}
 
+<h1>{{ .Title }}</h1>
+{{ block "meta" . }} {{ end }}
 <article>
   {{ .Content }}
 </article>

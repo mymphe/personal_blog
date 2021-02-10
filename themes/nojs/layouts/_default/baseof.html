@@ -10,10 +10,11 @@
   <body>
     <header>
         <p><a href="{{ .Site.BaseURL }}" >{{ .Site.Title }}</a></p>
+        <p><a href="mailto:azatsdev@gmail.com">Contact</a></p>
     </header>
     <main>
       {{ block "main" . }} {{ end }}
     </main>
-    <footer>{{ .Site.Params.description }}</footer>
+    <footer>&copy; Azat Serikov 2021</footer>
   </body>
 </html>
