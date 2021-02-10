@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url("../fonts/Merriweather/Merriweather-Regular.ttf");
+}
+@font-face {
+  font-family: Merriweather;
+  font-weight: bold;
+  src: url("../fonts/Merriweather/Merriweather-Bold.ttf");
+}
+@font-face {
+  font-family: Merriweather;
+  font-style: italic;
+  src: url("../fonts/Merriweather/Merriweather-Italic.ttf");
+}
+@font-face {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/Merriweather/Merriweather-BoldItalic.ttf");
+}
+
+body {
+  font-size: 20px;
+  font-family: Merriweather, Times, serif;
+}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ if .Page.IsHome }}
+    <ul>
+      {{ range .Pages}}
+        {{ range .Pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ else }}
+    <ul>
+      {{ range .Pages }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

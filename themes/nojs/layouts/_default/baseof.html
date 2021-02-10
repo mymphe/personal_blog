@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ if .Page.IsHome }}{{ .Site.Title }}{{ else }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style.css" />
+  </head>
+  <body>
+    <header>
+        <p><a href="{{ .Site.BaseURL }}" >{{ .Site.Title }}</a></p>
+    </header>
+    <main>
+      {{ block "main" . }} {{ end }}
+    </main>
+    <footer>{{ .Site.Params.description }}</footer>
+  </body>
+</html>

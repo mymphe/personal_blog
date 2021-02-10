@@ -1,0 +1,7 @@
+baseURL = "localhost:1313/"
+languageCode = "en-us"
+title = "Lost Herbarium"
+theme = "nojs"
+
+[params]
+  description = "A collection of dried out thoughts"
