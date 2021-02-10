@@ -11,6 +11,7 @@
         <p>{{ .Summary }}</p>
       </li>
     {{ end }}
+    {{ template "_internal/pagination.html" . }}
   </ul>
 {{ end }}
 

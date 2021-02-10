@@ -88,6 +88,17 @@ header {
   justify-content: space-between;
 }
 
+.site-title {
+  position: relative;
+}
+
+header svg {
+  position: absolute;
+  left: calc(100% + 2px);
+  top: 15%;
+  transform: rotate(45deg);
+}
+
 footer {
   border-top: var(--border);
   text-align: center;
