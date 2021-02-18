@@ -1,6 +1,6 @@
 baseURL = "localhost:1313/"
 languageCode = "en-us"
-title = "Herbarium"
+title = "Working Title"
 theme = "nojs"
 
 [params]

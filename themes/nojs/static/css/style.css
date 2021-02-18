@@ -148,6 +148,10 @@ blockquote {
   margin: 1rem 0;
 }
 
+blockquote p {
+  margin: 0;
+}
+
 .article-meta {
   text-align: left;
   color: var(--text-color2);
