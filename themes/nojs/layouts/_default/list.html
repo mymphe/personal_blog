@@ -3,12 +3,11 @@
     {{ range .Pages }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <div class="article-meta">
-          <span>{{ .Page.Date.Format "January 2, 2006" }}</span>
-          <br />
-          <span>{{ .Page.ReadingTime}}-minute read</span>
-        </div>
         <p>{{ .Summary }}</p>
+        <div class="article-meta">
+          <p>{{ .Page.Date.Format "January 2, 2006" }}</p>
+          <p>{{ .Page.ReadingTime}}-minute read</p>
+        </div>
       </li>
     {{ end }}
     {{ template "_internal/pagination.html" . }}

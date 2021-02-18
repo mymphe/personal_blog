@@ -8,8 +8,9 @@
 
 {{ define "main" }}
 
+<!-- {{ block "meta" . }} {{ end }} -->
 <h1>{{ .Title }}</h1>
-{{ block "meta" . }} {{ end }}
+{{ block "meta" . }}{{ end }}
 <article>
   {{ .Content }}
 </article>
