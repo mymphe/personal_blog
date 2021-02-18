@@ -1,4 +1,4 @@
-baseURL = "localhost:1313/"
+baseURL = "https://azats.dev"
 languageCode = "en-us"
 title = "Working Title"
 theme = "nojs"
