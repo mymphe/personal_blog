@@ -1,0 +1,11 @@
+{{ define "main" }}
+<ul class="posts">
+   {{ range .Site.Taxonomies.tags }}
+   <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} </a>
+    <div class="article-meta">
+        {{ (len .Pages) }} articles
+    </div>
+</li>
+   {{ end }}
+</ul>
+{{ end }}

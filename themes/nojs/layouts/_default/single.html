@@ -1,18 +1,28 @@
 {{ define "meta" }}
-  <div class="article-meta">
-    <span>{{ .Page.ReadingTime}}-minute read</span>
-    <br />
-    <span>{{ .Page.Date.Format "January 2, 2006" }}</span>
-  </div>
+<div class="article-meta">
+  <span>{{ .Page.ReadingTime}}-minute read</span>
+  <br />
+  <span>{{ .Page.Date.Format "January 2, 2006" }}</span>
+</div>
+{{ end }}
+
+{{ define "tags"}}
+<p class="article-tags">
+  Tags: 
+  {{ $list := .Params.tags }}
+  {{ $len := (len $list) }}
+  {{ range $index, $element := $list }}
+  <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ if not (eq (add $index 1) $len) }},&nbsp;{{ end }}
+  {{ end }}
+</p>
 {{ end }}
 
 {{ define "main" }}
 
-<!-- {{ block "meta" . }} {{ end }} -->
 <h1>{{ .Title }}</h1>
 {{ block "meta" . }}{{ end }}
 <article>
   {{ .Content }}
 </article>
-
+{{ block "tags" . }}{{ end }}
 {{ end }}

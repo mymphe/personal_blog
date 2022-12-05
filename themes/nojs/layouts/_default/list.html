@@ -1,26 +1,27 @@
 {{ define "posts" }}
-  <ul class="posts">
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <p>{{ .Summary }}</p>
-        <div class="article-meta">
-          <p>{{ .Page.Date.Format "January 2, 2006" }}</p>
-          <p>{{ .Page.ReadingTime}}-minute read</p>
-        </div>
-      </li>
-    {{ end }}
-    {{ template "_internal/pagination.html" . }}
-  </ul>
+<ul class="posts">
+  {{ range .Pages }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <p>{{ .Summary }}</p>
+    <div class="article-meta">
+      <p>{{ .Page.Date.Format "January 2, 2006" }}</p>
+      <p>{{ .Page.ReadingTime}}-minute read</p>
+    </div>
+  </li>
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
+</ul>
 {{ end }}
 
+
 {{ define "main" }}
-  {{ .Content }}
-  {{ if .Page.IsHome }}
-    {{ range .Pages}}
-      {{ block "posts" . }} {{ end }}
-    {{ end }}
-  {{ else }}
-    {{ block "posts" . }} {{ end }}
-  {{ end }}
+{{ .Content }}
+{{ if .Page.IsHome }}
+{{ range .Pages}}
+{{ block "posts" . }} {{ end }}
+{{ end }}
+{{ else }}
+{{ block "posts" . }} {{ end }}
+{{ end }}
 {{ end }}

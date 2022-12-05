@@ -34,6 +34,7 @@
   --text-color2: #606060;
   --bg-color: white;
   --accent-color: #daa520;
+  --accent-color-dark: #af7f08;
   --border: 1px solid var(--accent-color);
 }
 
@@ -66,13 +67,13 @@ h2 {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--accent-color);
   text-decoration: none;
   transition: color 0.1s ease-in;
 }
 
 a:hover, a:active, a:focus {
-  color: var(--accent-color);
+  color: var(--accent-color-dark);
 }
 
 
@@ -98,6 +99,10 @@ header {
   border-bottom: var(--border);
   display: flex;
   justify-content: space-between;
+}
+
+header > div > a:not(:last-of-type) {
+  margin-right: 10px;
 }
 
 footer {
